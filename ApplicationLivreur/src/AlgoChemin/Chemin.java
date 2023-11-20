@@ -24,7 +24,7 @@ public class Chemin {
 	public Chemin (ArrayList<Position> adresse) {
 		this.chemin = adresse;
 		this.nbPizza = adresse.size();
-		this.tempsLivraison = this.calculTemps();
+		this.tempsLivraison = this.calculTemps() + 15;
 		this.distanceLivraison = this.calculDistance();
 	}
 	
@@ -46,10 +46,13 @@ public class Chemin {
 	}
 	
 	public Chemin calculCheminDyna(ArrayList<Position> listeAdresse) {
+		Chemin temps = new Chemin(listeAdresse);
 		Chemin c = new Chemin();
+		int cpt = 0;
 		try {
 			if(this.rationTempsPizza()<c.rationTempsPizza()) {
-				
+				temps.chemin.remove(cpt);
+				this.
 			}
 		}
 		catch(Exception e){
