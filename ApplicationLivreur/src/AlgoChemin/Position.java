@@ -59,24 +59,6 @@ public class Position {
 		}
 	}
 	
-	public static ArrayList<Position> cheminOptiDyna(ArrayList<Position> positions, Position depart) 
-	{
-		ArrayList<Position> chemin = new ArrayList<Position>();
-		chemin.add(depart);
-		if (positions.size()==0)
-		{
-			return chemin;
-		}
-		else
-		{
-			for(Position p : positions)
-			{
-				positions.remove(p);
-				chemin = cheminOptiDyna(positions,depart);
-			}
-		}
-	}
-	
 	//(0;0)->(5;8)->(1;9)->(3;7)->(2;6)->(3;4)->
 	public static int sommeDist(ArrayList<Position> positions)
 	{
@@ -108,8 +90,8 @@ public class Position {
 		positions.add(new Position(3,7));
 		afficherPositions(positions);
 		Position depart = new Position(0,0);
-		ArrayList<Position> chemin = cheminOpti(positions,depart);
-		afficherPositions(chemin);
+		//ArrayList<Position> chemin = cheminOpti(positions,depart);
+		//afficherPositions(chemin);
 		System.out.println(depart.distance(new Position(5,8)));
 		System.out.println(depart.distance(new Position(3,4)));
 	}

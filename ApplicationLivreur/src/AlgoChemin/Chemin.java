@@ -52,7 +52,7 @@ public class Chemin {
 		try {
 			if(this.rationTempsPizza()<c.rationTempsPizza()) {
 				temps.chemin.remove(cpt);
-				this.
+				//this.
 			}
 		}
 		catch(Exception e){
