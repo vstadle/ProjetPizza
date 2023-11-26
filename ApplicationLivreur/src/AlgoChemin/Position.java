@@ -3,16 +3,16 @@ package AlgoChemin;
 import java.util.ArrayList;
 
 public class Position {
-	private int x;
-	private int y;
+	private double x;
+	private double y;
 	
-	public int getX() {
+	public double getX() {
 		return x;
 	}
 	public void setX(int x) {
 		this.x = x;
 	}
-	public int getY() {
+	public double getY() {
 		return y;
 	}
 	public void setY(int y) {
@@ -23,6 +23,16 @@ public class Position {
 	{
 		this.x=x;
 		this.y=y;
+	}
+	
+	public Position (String x, String y) {
+		this.x = Double.parseDouble(x);
+		this.y = Double.parseDouble(y);
+	}
+	
+	public String toString() {
+		String temp = "lat : " + this.getY() + " long: " + this.getX();
+		return temp;
 	}
 	
 	public double distance(Position p)
