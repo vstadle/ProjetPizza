@@ -6,8 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="jackson-core-2.16.0.jar"/>
+	<classpathentry kind="lib" path="jackson-annotations-2.16.0.jar"/>
 	<classpathentry kind="lib" path="jackson-databind-2.16.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/artox/Downloads/jackson-core-2.16.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/artox/Downloads/jackson-annotations-2.16.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
