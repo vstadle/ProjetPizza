@@ -14,7 +14,7 @@ public class Adresse {
 		this.CP=cp;
 		this.ville=v;
 		this.pays=pays;
-		String adresse = this.numero + "+" + API.formateAdresse(sadresse) + ",+" + this.CP + "+" + API.formateAdresse(ville) + ",+" + this.pays;
+		String adresse = this.numero + "+" + API.formateAdresse(nomAdresse) + ",+" + this.CP + "+" + API.formateAdresse(ville) + ",+" + this.pays;
 		p = API.getGPS(adresse) ;
 	}
 	
